@@ -4,4 +4,6 @@
 
 [Building ETL Pipelines with Apache Spark](https://docs.google.com/presentation/d/1X2WHETOErrkfz1bEUoS2saQlX07N3ACedgTSnE4RYto/edit?usp=sharing) **slides**
 
+[Proof-of-concept](nb/Proof-of-concept.ipynb)
+
 [Lesson 1](https://docs.google.com/presentation/d/1X2WHETOErrkfz1bEUoS2saQlX07N3ACedgTSnE4RYto/edit?usp=sharing) **doc**
