@@ -13,7 +13,7 @@ docker run -d -v `pwd`:/home/jovyan -p 80:8888 jupyter/pyspark-notebook
 
 This will launch a Jupyter Notebook server available at http://localhost/. By default this server has authentication and requires a token.
 
-### Retrieving Authentication Token
+### Accessing Jupyter
 
 1. Retrieve the container id of the Jupyter Notebook Server
 
@@ -24,11 +24,24 @@ This will launch a Jupyter Notebook server available at http://localhost/. By de
    This command displays currently running Docker containers. Look for the container using the image `jupyter/pyspark-notebook`. 
    
    Copy the `CONTAINER ID`.
+   
 2. Retrieve the token. Run the following command, replace `CONTAINERID` with the value copied in the previous step.
 
    ```
    docker exec CONTAINERID jupyter notebook list
    ```
+   
+   You should see an output like the following:
+   
+   ```
+   Currently running servers:
+   http://0.0.0.0:8888/?token=b362ef9ea151f45b29cdcf9e9c39e9c914ef2d93478bce17 :: /home/jovyan
+   ```
+   
+   Copy the value after `token=`. This is the authentication token. 
+   
+3. Access the server at http://localhost/ and use the authentication token to sign in.
+
 
 ## March 25, 2020
 
