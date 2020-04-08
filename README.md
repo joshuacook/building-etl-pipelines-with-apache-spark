@@ -4,7 +4,7 @@
 
 This lecture series requires a full installation of Pyspark. The easiest way to do this is via Docker. 
 
-Launch a Jupyter Notebook server using Docker and the jupyter/pyspark-notebook image on your local machine.
+Launch a Jupyter Notebook server using Docker and the `jupyter/pyspark-notebook` image on your local machine.
 
 Copy and paste the below into your terminal.
 
