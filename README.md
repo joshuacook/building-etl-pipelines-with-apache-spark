@@ -6,6 +6,8 @@ This lecture series requires a full installation of Pyspark. The easiest way to 
 
 Launch a Jupyter Notebook server using Docker and the jupyter/pyspark-notebook image on your local machine.
 
+Copy and paste the below into your terminal.
+
 ```
 docker pull jupyter/pyspark-notebook
 docker run -d -v `pwd`:/home/jovyan -p 80:8888 jupyter/pyspark-notebook
